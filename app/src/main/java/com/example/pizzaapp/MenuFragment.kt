@@ -48,11 +48,11 @@ class MenuFragment : Fragment() {
 //        list data menu
         val menu = ArrayList<MenuModel>()
         menu.add(MenuModel(R.drawable.pizza, "Vegetables Pizza", "80.000"))
-        menu.add(MenuModel(R.drawable.pizza, "Hawain Pizza", "85.000"))
         menu.add(MenuModel(R.drawable.pizza, "American Pizza", "90.000"))
         menu.add(MenuModel(R.drawable.pizza, "Java Pizza", "60.000"))
         menu.add(MenuModel(R.drawable.pizza, "Italian Pizza", "75.000"))
         menu.add(MenuModel(R.drawable.pizza, "Spanyol Pizza", "90.000"))
+        menu.add(MenuModel(R.drawable.pizza, "Prancis Pizza", "85.000"))
 //        set adapter
         val adapterMenu = AdapterMenu(menu)
         RVMenu.adapter = adapterMenu
