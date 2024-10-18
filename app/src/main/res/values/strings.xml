@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">PizzaApp</string>
+    <string name="log_in" translatable="false">Log in</string>
+    <string name="second_log_in" translatable="false">Log in</string>
+    <string name="call_us" translatable="false">Call us</string>
+    <string name="website" translatable="false">Website</string>
+    <string name="find_us" translatable="false">Find us</string>
+    <string name="save" translatable="false">Save</string>
+    <string name="button_next" translatable="false">Next</string>
+    <string name="best_pizza_in_jogja" translatable="false">Best Pizza in Jogja</string>
+    <string name="logo_pizza_chef" translatable="false">Logo Pizza and Chef</string>
+    <string name="premium_pizza" translatable="false">Premium pizza fresh from the oven</string>
+    <string name="Profile_header" translatable="false">Profile</string>
+    <string name="username_hint" translatable="false">Username</string>
+    <string name="password_hint" translatable="false">Password</string>
+    <string name="text_level" translatable="false">Level</string>
+    <string name="level_hint" translatable="false">Level</string>
+    <string name="text_name" translatable="false">Name</string>
+    <string name="name_hint" translatable="false">Name</string>
+    <string name="text_email" translatable="false">Email</string>
+    <string name="email_hint" translatable="false">Email</string>
+    <string name="about_developer" translatable="false">About Developer</string>
+    <string name="logo_phone" translatable="false">Logo Phone</string>
+    <string name="logo_website" translatable="false">Logo Website</string>
+    <string name="logo_location" translatable="false">Logo Location</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_menu">Menu</string>
+    <string name="text_account">Account</string>
+    <string name="text_report">Report</string>
+    <string name="text_transaction">Transaction</string>
+    <string name="menu_item">Menu Item</string>
+    <string name="what_are_you">What are you looking for?</string>
+    <string name="orders">Orders</string>
+    <string name="text_pizza1">Pizza Menu 1</string>
+    <string name="text_pizza2">Pizza Menu 2</string>
+    <string name="text_pizza3">Pizza Menu 3</string>
+    <string name="order_total">Order Total</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="add">Add</string>
+    <string name="rp_85_000">Rp 85.000</string>
+    <string name="logo_pizza">logo_pizza</string>
+
+
+</resources>

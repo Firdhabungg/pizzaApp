@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Account_Activity">
+
+    <TextView
+        android:id="@+id/textViewProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/Profile_header"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/text_name"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints="name"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/name_hint"
+        android:inputType="text"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/text_email"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints="emailAddress"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/password_hint"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/textViewLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/text_level"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextTextLevel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints="level"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/level_hint"
+        android:inputType="text"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="sans-serif-condensed"
+        android:backgroundTint="@color/red"
+        android:text="@string/save"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewAboutDevelop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/about_developer"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <!--    container  call, website, find us-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--    call us-->
+        <LinearLayout
+            android:id="@+id/LinearLayoutCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/kotak_putih"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/imageCall"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/oval_merah"
+                android:padding="11dp"
+                app:srcCompat="@drawable/call_white"
+                android:contentDescription="@string/logo_phone"/>
+
+            <TextView
+                android:id="@+id/textCallUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/call_us"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!--    Website-->
+        <LinearLayout
+            android:id="@+id/LinearLayoutWebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/kotak_putih"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/imageWebsite"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/oval_merah"
+                android:padding="11dp"
+                app:srcCompat="@drawable/website"
+                android:contentDescription="@string/logo_website"/>
+
+            <TextView
+                android:id="@+id/textWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/website"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!--    Find us-->
+        <LinearLayout
+            android:id="@+id/LinearLayoutLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/kotak_putih"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/imageLocation"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/oval_merah"
+                android:padding="11dp"
+                app:srcCompat="@drawable/maps"
+                android:contentDescription="@string/logo_location"/>
+
+            <TextView
+                android:id="@+id/textLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/find_us"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
