@@ -40,6 +40,9 @@
     <string name="add">Add</string>
     <string name="rp_85_000">Rp 85.000</string>
     <string name="logo_pizza">logo_pizza</string>
+    <string name="transaction_report">Transaction Report</string>
+    <string name="total_transaction">Total Transaction</string>
+    <string name="rp_692_000">Rp 692.000</string>
 
 
 </resources>
