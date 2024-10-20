@@ -145,10 +145,10 @@
         <!--    container  call, website, find us-->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="80dp"
             android:layout_marginTop="30dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
             android:gravity="center"
             android:weightSum="9"
             android:orientation="horizontal">
@@ -157,7 +157,7 @@
             <LinearLayout
                 android:id="@+id/LinearLayoutCall"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:background="@drawable/kotak_putih"
                 android:padding="8dp">
@@ -184,7 +184,7 @@
             <LinearLayout
                 android:id="@+id/LinearLayoutWebsite"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_marginStart="60dp"
                 android:layout_marginEnd="60dp"
@@ -207,13 +207,14 @@
                     android:fontFamily="sans-serif-condensed"
                     android:text="@string/website"
                     android:textAlignment="center"
+                    android:textSize="12sp"
                     android:textStyle="bold" />
             </LinearLayout>
             <!--    Find us-->
             <LinearLayout
                 android:id="@+id/LinearLayoutLocation"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:background="@drawable/kotak_putih"
                 android:padding="8dp">
