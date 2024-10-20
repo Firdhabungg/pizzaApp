@@ -43,6 +43,13 @@
     <string name="transaction_report">Transaction Report</string>
     <string name="total_transaction">Total Transaction</string>
     <string name="rp_692_000">Rp 692.000</string>
+    <string name="plus">+</string>
+    <string name="qty_1">Qty 1</string>
+    <string name="total_price">Total Price</string>
+    <string name="rp_374_000">Rp 374.000</string>
+    <string name="rp_340_000">Rp 340.000</string>
+    <string name="rp_34_000">Rp 34.000</string>
+    <string name="tax_10">Tax 10%</string>
 
 
 </resources>
