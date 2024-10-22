@@ -50,6 +50,11 @@
     <string name="rp_340_000">Rp 340.000</string>
     <string name="rp_34_000">Rp 34.000</string>
     <string name="tax_10">Tax 10%</string>
+    <string name="_110_000">110.000</string>
+    <string name="_10_000">10.000</string>
+    <string name="vegetarian_pizza_1">Vegetarian Pizza 1</string>
+    <string name="rp_70_000">Rp 70.000</string>
+    <string name="qty">Qty</string>
 
 
 </resources>
