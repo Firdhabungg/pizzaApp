@@ -46,10 +46,10 @@ class TransactionFragment : Fragment() {
         rvTrx.apply {
             rvTrx.layoutManager = LinearLayoutManager(activity)
             val order = ArrayList<TransactionModel>()
-            order.add(TransactionModel("Pizza 1", 80000, 1, R.drawable.pizza))
-            order.add(TransactionModel("Pizza 2", 85000, 1, R.drawable.pizza))
-            order.add(TransactionModel("Pizza 3", 65000, 1, R.drawable.pizza))
-            order.add(TransactionModel("Pizza 4", 90000, 1, R.drawable.pizza))
+            order.add(TransactionModel("Pizza 1", 80000, 1, R.drawable.logo_pizza))
+            order.add(TransactionModel("Pizza 2", 85000, 1, R.drawable.logo_pizza))
+            order.add(TransactionModel("Pizza 3", 65000, 1, R.drawable.logo_pizza))
+            order.add(TransactionModel("Pizza 4", 90000, 1, R.drawable.logo_pizza))
 
             var adapter = AdapterTransaction(order)
             rvTrx.adapter = adapter
