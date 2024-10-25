@@ -47,7 +47,7 @@ class TransactionFragment : Fragment() {
             rvTrx.layoutManager = LinearLayoutManager(activity)
             val order = ArrayList<TransactionModel>()
             order.add(TransactionModel("Vegetable Pizza", 80000, 1, R.drawable.pizza))
-            order.add(TransactionModel("Hawain Pizza", 85000, 1, R.drawable.pizza))
+            order.add(TransactionModel("Hawain Pizza", 85000, 1, R.drawable.hawaian_pizza))
             order.add(TransactionModel("American Pizza", 90000, 1, R.drawable.pizza))
             order.add(TransactionModel("Java Pizza", 75000, 1, R.drawable.pizza))
 
