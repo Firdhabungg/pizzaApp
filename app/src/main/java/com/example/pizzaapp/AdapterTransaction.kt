@@ -7,16 +7,24 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class AdapterTransaction (private val listOrder:List<TransactionModel>):
-    RecyclerView.Adapter<AdapterTransaction.ViewHolderOrder>() {
-    class ViewHolderOrder (v: View):RecyclerView.ViewHolder(v){
-    val imgFotoMenu : ImageView = v.findViewById(R.id.imageViewMenu)
-        val textNamaMenu : TextView = v.findViewById(R.id.textNamaMenu)
-        val textHargaMenu : TextView = v.findViewById(R.id.textHargaMenu)
-        private val btnLess: TextView = v.findViewById(R.id.textLess)
-        val textQty: TextView = v.findViewById(R.id.textQtyMenu)
-        private val btnMore: TextView = v.findViewById(R.id.textMore)
+class AdapterTransaction (private val listOrder:List<TransactionModel>) : RecyclerView.Adapter<AdapterTransaction.ViewHolderOrder>() {
+    class ViewHolderOrder (v: View):RecyclerView.ViewHolder(v) {
+        val imgFotoMenu : ImageView
+        val textNamaMenu : TextView
+        val textHargaMenu : TextView
+        val btnLess : TextView
+        val textQty : TextView
+        val btnMore : TextView
         val context = v.context;
+
+        init {
+            imgFotoMenu = v.findViewById(R.id.imageMenu)
+            textNamaMenu = v.findViewById(R.id.textNamaMenu)
+            textHargaMenu = v.findViewById(R.id.textHargaMenu)
+            textQty = v.findViewById(R.id.textQtyMenu)
+            btnLess = v.findViewById(R.id.textLess)
+            btnMore = v.findViewById(R.id.textMore)
+        }
 
     }
 
@@ -24,21 +32,21 @@ class AdapterTransaction (private val listOrder:List<TransactionModel>):
         parent: ViewGroup,
         viewType: Int
     ): AdapterTransaction.ViewHolderOrder {
-        val layoutInflater = LayoutInflater.from(parent?.context)
+        val layoutInflater = LayoutInflater.from(parent.context)
         val cellForRow = layoutInflater.inflate(R.layout.card_layout_order, parent, false)
-        return  ViewHolderOrder(cellForRow)
+
+        return ViewHolderOrder(cellForRow)
     }
-//detail view dari card_layout_order yang disesuaikan posisinya seperti posisi di index 0 maka dicari di index ke 0
+
     override fun onBindViewHolder(holder: AdapterTransaction.ViewHolderOrder, position: Int) {
         val modelTrx = listOrder[position]
         holder.imgFotoMenu.setImageResource(modelTrx.gambarMenu)
         holder.textNamaMenu.text = modelTrx.namaMenu
-        holder.textHargaMenu.text = modelTrx.hargaMenu.toString()
-        holder.textQty.text = modelTrx.qtyMenu.toString()
+        holder.textHargaMenu.text = modelTrx.harga.toString()
+        holder.textQty.text = modelTrx.qty.toString()
     }
 
     override fun getItemCount(): Int {
         return listOrder.size
     }
-
 }
