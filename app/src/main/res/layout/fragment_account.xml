@@ -139,119 +139,21 @@
             android:text="@string/about_developer"
             android:textAlignment="center"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
-
-        <!--    container  call, website, find us-->
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="80dp"-->
-<!--            android:layout_marginTop="30dp"-->
-<!--            android:layout_marginStart="32dp"-->
-<!--            android:layout_marginEnd="32dp"-->
-<!--            android:gravity="center"-->
-<!--            android:weightSum="9"-->
-<!--            android:orientation="horizontal">-->
-
-<!--            &lt;!&ndash;    call us&ndash;&gt;-->
-<!--            <LinearLayout-->
-<!--                android:id="@+id/LinearLayoutCall"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:orientation="vertical"-->
-<!--                android:background="@drawable/kotak_putih"-->
-<!--                android:padding="8dp">-->
-
-<!--                <ImageButton-->
-<!--                    android:id="@+id/imageCall"-->
-<!--                    android:layout_width="48dp"-->
-<!--                    android:layout_height="48dp"-->
-<!--                    android:background="@drawable/oval_merah"-->
-<!--                    android:padding="11dp"-->
-<!--                    app:srcCompat="@drawable/call_white"-->
-<!--                    android:contentDescription="@string/logo_phone"/>-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/textCallUs"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:fontFamily="sans-serif-condensed"-->
-<!--                    android:text="@string/call_us"-->
-<!--                    android:textAlignment="center"-->
-<!--                    android:textStyle="bold" />-->
-<!--            </LinearLayout>-->
-<!--            &lt;!&ndash;    Website&ndash;&gt;-->
-<!--            <LinearLayout-->
-<!--                android:id="@+id/LinearLayoutWebsite"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:orientation="vertical"-->
-<!--                android:layout_marginStart="60dp"-->
-<!--                android:layout_marginEnd="60dp"-->
-<!--                android:background="@drawable/kotak_putih"-->
-<!--                android:padding="8dp">-->
-
-<!--                <ImageButton-->
-<!--                    android:id="@+id/imageWebsite"-->
-<!--                    android:layout_width="48dp"-->
-<!--                    android:layout_height="48dp"-->
-<!--                    android:background="@drawable/oval_merah"-->
-<!--                    android:padding="11dp"-->
-<!--                    app:srcCompat="@drawable/website"-->
-<!--                    android:contentDescription="@string/logo_website"/>-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/textWebsite"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:fontFamily="sans-serif-condensed"-->
-<!--                    android:text="@string/website"-->
-<!--                    android:textAlignment="center"-->
-<!--                    android:textSize="12sp"-->
-<!--                    android:textStyle="bold" />-->
-<!--            </LinearLayout>-->
-<!--            &lt;!&ndash;    Find us&ndash;&gt;-->
-<!--            <LinearLayout-->
-<!--                android:id="@+id/LinearLayoutLocation"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:orientation="vertical"-->
-<!--                android:background="@drawable/kotak_putih"-->
-<!--                android:padding="8dp">-->
-
-<!--                <ImageButton-->
-<!--                    android:id="@+id/imageLocation"-->
-<!--                    android:layout_width="48dp"-->
-<!--                    android:layout_height="48dp"-->
-<!--                    android:background="@drawable/oval_merah"-->
-<!--                    android:padding="11dp"-->
-<!--                    app:srcCompat="@drawable/maps"-->
-<!--                    android:contentDescription="@string/logo_location"/>-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/textLocation"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:fontFamily="sans-serif-condensed"-->
-<!--                    android:text="@string/find_us"-->
-<!--                    android:textAlignment="center"-->
-<!--                    android:textStyle="bold" />-->
-<!--            </LinearLayout>-->
-
-<!--        </LinearLayout>-->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="36dp"
             android:layout_marginTop="20dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout3"
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/kotak_putih"
-                android:padding="6dp"
+                android:padding="8dp"
                 tools:ignore="MissingConstraints">
 
                 <ImageView
@@ -259,6 +161,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/oval_merah"
+                    android:contentDescription="@string/call_us"
                     android:padding="10dp"
                     android:src="@drawable/call_white"
                     app:layout_constraintBottom_toTopOf="@+id/textCallUs"
@@ -273,7 +176,7 @@
                     android:fontFamily="sans-serif-condensed"
                     android:text="@string/call_us"
                     android:textAlignment="center"
-                    android:textSize="14sp"
+                    android:textSize="11sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -282,10 +185,10 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout4"
-                android:layout_width="wrap_content"
+                android:layout_width="62dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/kotak_putih"
-                android:padding="6dp"
+                android:padding="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
 
                 app:layout_constraintEnd_toStartOf="@+id/constraintLayout5"
@@ -298,6 +201,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/oval_merah"
+                    android:contentDescription="@string/logo_website"
                     android:padding="10dp"
                     android:src="@drawable/website"
                     app:layout_constraintBottom_toTopOf="@+id/textView3"
@@ -311,7 +215,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/website"
                     android:textAlignment="center"
-                    android:textSize="14sp"
+                    android:textSize="11sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -320,10 +224,10 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout5"
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/kotak_putih"
-                android:padding="6dp"
+                android:padding="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:ignore="MissingConstraints">
 
@@ -332,24 +236,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/oval_merah"
+                    android:contentDescription="@string/maps"
                     android:padding="10dp"
                     android:src="@drawable/maps"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"></ImageView>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/find_us"
                     android:textAlignment="center"
-                    android:textSize="14sp"
-
+                    android:textSize="11sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView4"></TextView>
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
