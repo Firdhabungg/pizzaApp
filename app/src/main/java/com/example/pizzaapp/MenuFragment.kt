@@ -5,8 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.pizzaapp.client.RetrofitClient
+import com.example.pizzaapp.response.FoodResponse
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -22,7 +28,7 @@ class MenuFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-
+    private val listMenu = ArrayList<FoodResponse>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -30,6 +36,8 @@ class MenuFragment : Fragment() {
             param2 = it.getString(ARG_PARAM2)
         }
     }
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -44,18 +52,21 @@ class MenuFragment : Fragment() {
 //        tambah data ke RecyclerView
         val RVMenu : RecyclerView = view.findViewById(R.id.reycyclerViewMenu)
         RVMenu.layoutManager = GridLayoutManager(activity, 2)
+//        list data -> response dari web service (REST API)
+        RetrofitClient.instance.getFood().enqueue(object : Callback<FoodResponse>{
+            override fun onResponse(p0: Call<FoodResponse>, p1: Response<FoodResponse>) {
+                listMenu.clear()
+                p1.body()?.let {listMenu.addAll(listOf(it)) }
 
-//        list data menu
-        val menu = ArrayList<MenuModel>()
-        menu.add(MenuModel(R.drawable.pizza, "Vegetables Pizza", "80.000"))
-        menu.add(MenuModel(R.drawable.pizza, "American Pizza", "90.000"))
-        menu.add(MenuModel(R.drawable.pizza, "Java Pizza", "60.000"))
-        menu.add(MenuModel(R.drawable.pizza, "Italian Pizza", "75.000"))
-        menu.add(MenuModel(R.drawable.pizza, "Spanyol Pizza", "90.000"))
-        menu.add(MenuModel(R.drawable.pizza, "Prancis Pizza", "85.000"))
-//        set adapter
-        val adapterMenu = AdapterMenu(menu)
-        RVMenu.adapter = adapterMenu
+                var adapterMenu = AdapterMenu(listMenu)
+                RVMenu.adapter = adapterMenu
+            }
+
+            override fun onFailure(p0: Call<FoodResponse>, p1: Throwable) {
+                Toast.makeText(context,p1.message, Toast.LENGTH_SHORT).show()
+            }
+
+        })
     }
 
     companion object {
