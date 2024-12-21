@@ -11,7 +11,7 @@ import retrofit2.http.POST
 interface Api {
 //    request get data menu (food)
     @GET("Food")
-    fun getFood(): Call<FoodResponse>
+    fun getFood(): Call<ArrayList<FoodResponse>>
 
     @FormUrlEncoded
     @POST("Account")

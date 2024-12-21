@@ -11,10 +11,10 @@
 
     <ImageView
         android:id="@+id/imageViewPizza"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:layout_marginTop="50dp"
-        app:srcCompat="@drawable/logo_pizza"
+        app:srcCompat="@drawable/pizza"
         android:contentDescription="Logo Pizza" />
 
     <TextView

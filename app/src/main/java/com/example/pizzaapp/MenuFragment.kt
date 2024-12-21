@@ -53,16 +53,20 @@ class MenuFragment : Fragment() {
         val RVMenu : RecyclerView = view.findViewById(R.id.reycyclerViewMenu)
         RVMenu.layoutManager = GridLayoutManager(activity, 2)
 //        list data -> response dari web service (REST API)
-        RetrofitClient.instance.getFood().enqueue(object : Callback<FoodResponse>{
-            override fun onResponse(p0: Call<FoodResponse>, p1: Response<FoodResponse>) {
+        RetrofitClient.instance.getFood().enqueue(object : Callback<ArrayList<FoodResponse>>{
+
+            override fun onResponse(
+                p0: Call<ArrayList<FoodResponse>>,
+                p1: Response<ArrayList<FoodResponse>>
+            ) {
                 listMenu.clear()
-                p1.body()?.let {listMenu.addAll(listOf(it)) }
+                p1.body()?.let {listMenu.addAll(it) }
 
                 var adapterMenu = AdapterMenu(listMenu)
                 RVMenu.adapter = adapterMenu
             }
 
-            override fun onFailure(p0: Call<FoodResponse>, p1: Throwable) {
+            override fun onFailure(p0: Call<ArrayList<FoodResponse>>, p1: Throwable) {
                 Toast.makeText(context,p1.message, Toast.LENGTH_SHORT).show()
             }
 
